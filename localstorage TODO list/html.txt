@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista zadan</title>
+        <style>
+            body{
+                background-color: #E7E9EE;
+            }
+            h1{
+                text-align: center;
+            }
+            #search{
+                position: relative;
+                left: 25%;
+                width: 50%;
+                bottom: 10px;
+                height: 45px;
+                text-align: center;
+                border:1px;
+                border-radius: 55px;
+                border-style: solid;
+                background-color: #E7E9E;
+            }
+
+
+            table {
+              border:1px;
+              border-style: solid;
+              width: 100%;
+            }
+            
+            td, th {
+              border: 1px solid #000000;
+              text-align: left;
+              padding: 8px;
+            }
+            
+            </style>
+            <script type="js" ></script>
+    </head>
+    <body>
+        <h1>TO DO LIST </h1>
+        <input type="text" id="search" placeholder="Szukaj">
+        
+        <div id='div'>
+            <table>
+                <tr>
+                  <th>Zadanie</th>
+                  <th>Data</th>
+                </tr>
+              </table>
+        </div>
+          <b>Zadanie: </b>
+          <input type="text" id="task" placeholder="Zadanie">&nbsp
+          <b>Data:</b>
+          <input type="date" id="date" placeholder="Data">&nbsp
+          <button type="submit" id="addBtn">Dodaj</button>&nbsp
+          <button type="submit" id="clsBtn">Wyczysc</button>
+
+    <script type="text/javascript" src="index.js"></script>
+    </body>
+
+
+</html>

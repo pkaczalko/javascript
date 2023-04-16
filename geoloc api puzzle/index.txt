@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Puzzelki</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <script src="https://kaczalko.pl/AI1/lab4/dom-to-image.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p id="geo">Twoje współrzędne: Latitude - Longitude  - </p>
+      <div id="map"></div>
+      <div id="puzzle">
+        <img id="img">
+      </div>
+      <div id="buttons">
+        <button onclick="getGeolocation()">Geolokalizacja</button>
+        <button onclick="createPuzzleImg()">Raster</button>
+        <button id="puzzbutt" onclick="createPuzzle()">Puzzle</button>
+      </div>
+      <div id="pieces" style="display: none;"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>

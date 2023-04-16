@@ -1,0 +1,114 @@
+body {
+    font-family: serif;
+    background-color: #3D4852 ;
+}
+button{
+    margin: 5px auto;
+    width: 100px;
+    height: 35px;
+    background-color: #8A9AA8;
+    border-radius: 3px;
+}
+
+#weather-input{
+    width: 350px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+input{
+    border: 1px solid #c0c0c0;
+    text-align: center;
+    width: 350px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #8A9AA8;
+
+}
+
+#results{
+    display: table;
+    border-spacing:5px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+div[class*="weather-block"] {
+    display: table-cell;
+    border: 1px solid #c0c0c0;
+    background-color: #576775;
+    width: 102px;
+    margin: 15px auto;
+}
+
+.c{
+   display: table-row;
+   height: 120px;
+}
+
+p{
+    text-align: center;
+    display: table-cell;
+    width: 70px;
+    background-color: #45525E;
+    border: 1px solid #c0c0c0;
+    font-size: 25px;
+    overflow-wrap: break-word; 
+
+}
+
+.weather-hour {
+    position: absolute;
+    font-weight: bold;
+    width:102px;
+    text-align: center;
+    margin: 5px auto;
+    bottom: 5px;
+    font-size: 15px;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.weather-temperature {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
